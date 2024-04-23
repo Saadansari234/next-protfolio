@@ -2,14 +2,14 @@
 const myProjects = [
     {
         p1: {
-            ImageLink: "/projects/tp-pythone.png",
+            ImageLink: "./projects/tp-pythone.png",
             Name:"Techpaathshala Landing Page",
             Stack:"HTML, CSS, Javascript, Git and Github",
             SourceCode: "",
             LivePrev: ""
         },
         p2: {
-            ImageLink: "/projects/portfolio.png",
+            ImageLink: "./projects/portfolio.png",
             Name:"Portfolio Website",
             Stack:"HTML, CSS, Javascript, Git and Github",
             SourceCode: " https://github.com/Saadansari234/new-portfolio-website.git",
@@ -19,14 +19,14 @@ const myProjects = [
     },
     {
         p1: {
-            ImageLink: "/projects/e-commerce.png",
+            ImageLink: "./projects/e-commerce.png",
             Name:"E-commerce App",
             Stack:"HTML, CSS, Javascript, Git and Github",
             SourceCode: "https://github.com/Saadansari234/ecommerce1.git",
             LivePrev: "https://saadansari234.github.io/ecommerce1/"
         },
         p2: {
-            ImageLink: "/projects/validation-app.png",
+            ImageLink: "./projects/validation-app.png",
             Name:"Validation App",
             Stack:"HTML, CSS, Javascript, Git and Github",
             SourceCode: "https://github.com/Saadansari234/passwordvalidation.github.io.git",
@@ -36,14 +36,14 @@ const myProjects = [
     },
     {
         p1: {
-            ImageLink: "/projects/quiz-game.png",
+            ImageLink: "./projects/quiz-game.png",
             Name:"Quiz App",
             Stack:"HTML, CSS, Javascript, Git and Github",
             SourceCode: "https://github.com/Saadansari234/quizgame.github.io.git",
             LivePrev: "https://saadansari234.github.io/quizgame.github.io/"
         },
         p2: {
-            ImageLink: "/projects/number-game.png",
+            ImageLink: "./projects/number-game.png",
             Name:"Nmber Game",
             Stack:"HTML, CSS, Javascript, Git and Github",
             SourceCode: "https://github.com/Saadansari234/numbergame.github.io.git",
