@@ -24,7 +24,7 @@ const Aboutme = () => {
                             About Me
                         </h1>
                         <p className="mt-6 text-lg leading-8 text-gray-600">
-                            Passionate React developer with a flair for crafting efficient and intuitive user interfaces. Excited about creating seamless web experiences and staying at the forefront of modern web development. Let's connect and collaborate to build the next generation of web applications together!
+                            Passionate React developer with a flair for crafting efficient and intuitive user interfaces. Excited about creating seamless web experiences and staying at the forefront of modern web development. Lets connect and collaborate to build the next generation of web applications together
                         </p>
                         <div className='flex flex-col  mt-4 lg:mt-8'>
                             <div className="font-semibold text-2xl leading-6 ">
