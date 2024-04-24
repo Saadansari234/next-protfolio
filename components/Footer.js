@@ -3,7 +3,7 @@ import Socials from '@/common/Socials'
 const Footer = () => {
     return (
         <footer className='bg-gray-600'>
-            <div className="mx-auto w-5/6 py-4 sm:py-6 lg:py-6 px-2 sm:px-6 lg:px-8 ">
+            <div className="mx-auto w-5/6 py-2 sm:py-3 lg:py-3 px-2 sm:px-6 lg:px-8 ">
 
                 <div className='flex justify-between items-center flex-col lg:flex-row gap-4 lg:gap-0'>
                     <div className='text-center'>

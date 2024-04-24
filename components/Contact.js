@@ -1,8 +1,20 @@
+"use client"
 import React from 'react'
-import { Textfield, Input } from '@/common/Input'
-
+// import { Textfield, Input } from '@/common/Input'
+import { useRef } from 'react';
 
 const Contact = () => {
+
+    const formRef = useRef(null);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Submit form data here
+
+    // After submitting, reset the form
+    formRef.current.reset();
+  };
+
     return (
         <div className='flex flex-col items-center  mx-auto w-full lg:w-5/6 py-4 sm:py-8 lg:py-8 px-2 sm:px-6 lg:px-8  '  >
             {/* <div className='w-full text-center '>
@@ -29,7 +41,7 @@ const Contact = () => {
                 </p>
             </div>
 
-            <form className='bg-white box-shadow-2 color-border my-5 lg:my-11' action="https://formspree.io/f/xjvqpdgr" method="POST">
+            <form className='bg-white box-shadow-2 color-border my-5 lg:my-11' ref={formRef} onSubmit={handleSubmit} action="https://formspree.io/f/xjvqpdgr" method="POST">
                 <div className='mx-8 my-8 '>
                     <div className="space-y-12 ">
                         <div className="border-b border-gray-900/10 pb-12">

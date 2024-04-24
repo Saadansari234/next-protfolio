@@ -1,11 +1,17 @@
+
 const TechStacks = [
-    { logo: "fa-brands fa-react" },
-    { logo: "fa-brands fa-js" },
-    { logo: "fa-brands fa-css3-alt" },
-    { logo: "fa-brands fa-html5" },
-    { logo: "fa-brands fa-github" },
-    { logo: "fa-brands fa-git-alt" },
-    { logo: "fa-brands fa-bootstrap" },
+    { logo: "./logos/react.svg" },
+    { logo: "./logos/next.svg" },
+    { logo: "./logos/js.svg" },
+    { logo: "./logos/css.svg" },
+    { logo: "./logos/bootstrap.svg" },
+    { logo: "./logos/html.svg" },
+    { logo: "./logos/vscode.svg" },
+    { logo: "./logos/sass.svg" },
+    { logo: "./logos/material.svg" },
+    { logo: "./logos/tailwind.svg" },
+    { logo: "./logos/git.svg" },
+    { logo: "./logos/github.svg" },
 ]
 
 export default TechStacks

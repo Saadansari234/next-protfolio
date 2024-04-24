@@ -18,14 +18,14 @@ const Projects = () => {
                         if (elem.position == "left") {
                             return (
 
-                                <div class="flex flex-wrap justify-between w-full h-full " key={index}>
+                                <div class="flex  flex-wrap justify-center lg:justify-between  w-full h-full " key={index}>
 
                                     <div class="mt-3 relative h-60 bg-slate-400 project-container-1 color-border box-shadow-2 " >
                                         <Image
                                      
                                             src={elem.p1.ImageLink}
                                             alt="mypic"
-                                            fill
+                                            layout="fill"
                                             objectFit="cover"
                                             className="absolute-image img-radius"
                                             quality={50}
@@ -72,7 +72,7 @@ const Projects = () => {
                             )
                         } else if (elem.position == "right") {
                             return (
-                                <div class="flex flex-wrap justify-between w-full h-full" key={index}>
+                                <div class="flex flex-wrap justify-center lg:justify-between w-full h-full" key={index}>
 
                                     <div class="mt-3 relative h-60 bg-slate-400 project-container-2 color-border box-shadow-2">
                                         <Image

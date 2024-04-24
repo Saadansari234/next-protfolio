@@ -110,6 +110,8 @@ color: transparent;
   
 } */
 
+
+
 .absolute-image {
   position: absolute;
   top: 0;
@@ -148,11 +150,11 @@ color: transparent;
 
 @media  (max-width: 768px) {
   .project-container-1{
-    width: 100%;
+    width: 95%;
 
   }
   .project-container-2{
-    width: 100%;
+    width: 95%;
   }
 }
 
