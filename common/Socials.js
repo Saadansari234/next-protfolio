@@ -17,7 +17,7 @@ const Socials = () => {
             iconName:"fa-brands fa-google",
         },
         {
-            link:"./saad-resume.pdf",
+            link:"/next-protfolio/saad-resume.pdf",
             iconName:"fa-regular fa-file",
             isDownload: true,
         }
