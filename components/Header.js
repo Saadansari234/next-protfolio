@@ -1,7 +1,7 @@
 "use client"
 
 const downloadCv = {
-  link: "/saad-resume.pdf",
+  link: "./saad-resume.pdf",
   isDownload: true,
 }
 export default function Header() {
@@ -50,7 +50,7 @@ export default function Header() {
               >
                 Download CV
               </a>
-              <a href="/about" className="text-sm font-semibold leading-6 text-gray-900">
+              <a href="/next-protfolio/about" className="text-sm font-semibold leading-6 text-gray-900">
                 Learn more <span aria-hidden="true">→</span>
               </a>
             </div>

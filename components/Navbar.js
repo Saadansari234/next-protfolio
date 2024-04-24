@@ -5,7 +5,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { useRef , useEffect } from 'react';
 // changes for deployment
 const navigation = [
-    { name: 'Home', href: 'next-protfolio/', current: false },
+    { name: 'Home', href: '/next-protfolio', current: false },
     { name: 'About', href: '/next-protfolio/about', current: false },
     { name: 'Portfolio', href: '/next-protfolio/portfolio', current: false },
     { name: 'Contact', href: '/next-protfolio/contact', current: false },
