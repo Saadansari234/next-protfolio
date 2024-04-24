@@ -11,7 +11,7 @@ export default function Header() {
         // For download link, simulate click event on hidden anchor element
         const anchor = document.createElement('a');
         anchor.href = link.link;
-        anchor.download = './saad-resume.pdf'; // Change the filename as needed
+        anchor.download = 'saad-resume.pdf'; // Change the filename as needed
         anchor.click();
     }
 };
