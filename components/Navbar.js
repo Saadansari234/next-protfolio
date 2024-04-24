@@ -1,7 +1,7 @@
 "use client"
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import React from 'react';
+// import { Disclosure, Menu, Transition } from '@headlessui/react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { useRef , useEffect } from 'react';
 const navigation = [
     { name: 'Home', href: '/next-protfolio', current: false },

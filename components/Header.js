@@ -1,20 +1,10 @@
 "use client"
-import { useState } from 'react'
-
-
-const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
-]
 
 const downloadCv = {
   link: "/saad-resume.pdf",
   isDownload: true,
 }
 export default function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   const handleClick = (link) => {
     if (link.isDownload) {
