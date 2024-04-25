@@ -2,8 +2,6 @@
 import React from 'react'
 // import { Textfield, Input } from '@/common/Input'
 import { useRef } from 'react';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css'
 
 const Contact = () => {
 
@@ -13,10 +11,6 @@ const Contact = () => {
     event.preventDefault();
     // Submit form data here
 
-    // Show success message
-    toast.success('Message sent successfully!', {
-        position: toast.POSITION.TOP_RIGHT // Set toast position to top right
-    });
 
     // After submitting, reset the form
     formRef.current.reset();
@@ -143,17 +137,6 @@ const Contact = () => {
                 </div>
             </form>
 
-            <ToastContainer
-                position="top-right" // Set toast container position to top right
-                autoClose={5000} // Close toast after 5 seconds
-                hideProgressBar={false}
-                newestOnTop={false}
-                closeOnClick
-                rtl={false}
-                pauseOnFocusLoss
-                draggable
-                pauseOnHover
-            />
 
         </div >
 
