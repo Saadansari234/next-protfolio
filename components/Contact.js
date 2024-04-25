@@ -1,52 +1,9 @@
 "use client"
 import React from 'react'
 // import { Textfield, Input } from '@/common/Input'
-import { useState } from 'react';
+
 const Contact = () => {
 
-    const [formData, setFormData] = useState({
-        firstName: '',
-        lastName: '',
-        number: '',
-        email: '',
-        message: ''
-    });
-
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({
-            ...formData,
-            [name]: value
-        });
-    };
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        try {
-            const response = await fetch('https://formspree.io/f/xjvqpdgr', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(formData)
-            });
-            if (response.ok) {
-                // Reset the form after successful submission
-                setFormData({
-                    firstName: '',
-                    lastName: '',
-                    number: '',
-                    email: '',
-                    message: ''
-                });
-                console.log('Form submitted successfully');
-            } else {
-                console.error('Form submission failed:', response.statusText);
-            }
-        } catch (error) {
-            console.error('Form submission failed:', error);
-        }
-    };
 
     return (
         <div className='flex flex-col items-center  mx-auto w-full lg:w-5/6 py-4 sm:py-8 lg:py-8 px-2 sm:px-6 lg:px-8  '  >
@@ -61,7 +18,7 @@ const Contact = () => {
                 </p>
             </div>
 
-            <form className='bg-white box-shadow-2 color-border my-5 lg:my-11'  onSubmit={handleSubmit}>
+            <form className='bg-white box-shadow-2 color-border my-5 lg:my-11' action="https://formspree.io/f/xjvqpdgr" method="POST">
                 <div className='mx-8 my-8 '>
                     <div className="space-y-12 ">
                         <div className="border-b border-gray-900/10 pb-12">
@@ -81,8 +38,6 @@ const Contact = () => {
                                             id="first-name"
                                             required
                                             autoComplete="given-name"
-                                            value={formData.firstName}
-                                            onChange={handleChange}
                                             className="block w-full px-1.5 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                         />
                                     </div>
@@ -99,8 +54,6 @@ const Contact = () => {
                                             id="last-name"
                                             required
                                             autoComplete="given-name"
-                                            value={formData.lastName}
-                                            onChange={handleChange}
                                             className="block w-full px-1.5 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                         />
                                     </div>
@@ -117,8 +70,6 @@ const Contact = () => {
                                             id="number"
                                             required
                                             autoComplete="given-name"
-                                            value={formData.number}
-                                            onChange={handleChange}
                                             className="block w-full px-1.5 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                         />
                                     </div>
@@ -135,8 +86,6 @@ const Contact = () => {
                                             id="e-mail"
                                             required
                                             autoComplete="given-name"
-                                            value={formData.email}
-                                            onChange={handleChange}
                                             className="block w-full px-1.5 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                         />
                                     </div>
@@ -150,11 +99,7 @@ const Contact = () => {
                                         <textarea
                                             id="message"
                                             name="message"
-                                
                                             required
-                                            autoComplete="given-name"
-                                            value={formData.message}
-                                            onChange={handleChange}
                                             rows={3}
                                             className="block w-full px-1.5 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                             defaultValue={''}
