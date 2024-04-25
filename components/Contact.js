@@ -2,6 +2,8 @@
 import React from 'react'
 // import { Textfield, Input } from '@/common/Input'
 import { useRef } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'
 
 const Contact = () => {
 
@@ -11,26 +13,18 @@ const Contact = () => {
     event.preventDefault();
     // Submit form data here
 
+    // Show success message
+    toast.success('Message sent successfully!', {
+        position: toast.POSITION.TOP_RIGHT // Set toast position to top right
+    });
+
     // After submitting, reset the form
     formRef.current.reset();
   };
 
     return (
         <div className='flex flex-col items-center  mx-auto w-full lg:w-5/6 py-4 sm:py-8 lg:py-8 px-2 sm:px-6 lg:px-8  '  >
-            {/* <div className='w-full text-center '>
-                <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-                    Contact
-                </h1>
-                <p className="mt-3 text-xl font-bold leading-8 dark-heading-extrapro">
-                    Please Fill This Form To Connect
-                </p>
-            </div>
-            <form action='' className='w-2/3 bg-white'>
-                <div className='flex justify-around flex-wrap '>
-                    <Input />
-                    <Textfield />
-                </div>
-            </form>  */}
+           
 
             <div className='w-full text-center '>
                 <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
@@ -45,20 +39,11 @@ const Contact = () => {
                 <div className='mx-8 my-8 '>
                     <div className="space-y-12 ">
                         <div className="border-b border-gray-900/10 pb-12">
-                            {/* <h2 className="text-base font-semibold leading-7 text-gray-900">Note:</h2>
-                            <p className="mt-1 text-sm leading-6 text-gray-600">
-                                If you like my profile fill this form to connect.
-                            </p> */}
+                            
 
                             <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
 
 
-                                {/* <Input Type={"text"} Label={"First Name"} Auth={"First-name"} />
-                                <Input Type={"text"} Label={"Last Name"} Auth={"Last-name"} />
-                                <Input Type={"number"} Label={"Number"} Auth={"Number"} />
-                                <Input Type={"email"} Label={"E mail"} Auth={"E-mail"} />
-
-                                <Textfield Label={"Message"} Auth={"Message"} /> */}
                                 <div className="sm:col-span-3">
                                     <label htmlFor="first-name" className="block text-sm font-medium leading-6 text-gray-900">
                                         First name
@@ -157,6 +142,18 @@ const Contact = () => {
                     </div>
                 </div>
             </form>
+
+            <ToastContainer
+                position="top-right" // Set toast container position to top right
+                autoClose={5000} // Close toast after 5 seconds
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+            />
 
         </div >
 
