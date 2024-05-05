@@ -122,12 +122,6 @@ color: transparent;
 
 
 .color-border{
-  /* border-width: 10px;
-  border-style: solid;
-  border-image: linear-gradient(rgb(203 213 225 / var(--tw-text-opacity)), rgb(153 163 175 / var(--tw-text-opacity))) 1;
-  color: transparent;
-  background-image: linear-gradient(rgb(203 213 225 / var(--tw-text-opacity)), rgb(153 163 175 / var(--tw-text-opacity))) 1; */
-  /* border: 3px solid gray; */
   border-radius: 12px;
 }
 
@@ -166,7 +160,7 @@ color: transparent;
   height: 100%;
   position: absolute;
   /* z-index: 1; */
- display: none;
+ /* display: none; */
 }
 
 .project-container-1:hover .project-details,
@@ -182,5 +176,17 @@ color: transparent;
    font-size: 13px ;
    gap: 2rem;
 
+  }  
+}
+
+.myproject-contain{
+  margin-bottom: 40px;
+  width: 33%;
+}
+
+@media  (max-width: 768px) {
+  .myproject-contain{
+    margin-bottom: 20px;
+    width: 100%;
   }
 }

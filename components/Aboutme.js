@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Socials from '@/common/Socials'
-
+import { mypicLink } from '@/Database/Links'
 const Aboutme = () => {
     return (
         <div>
@@ -10,7 +10,7 @@ const Aboutme = () => {
                     <div className='lg:w-5/12 md:w-5/12'>
                         <div className='my-image-container'>
                             <Image
-                                src="./mypic-2.jpeg"
+                                src={mypicLink}
                                 alt="mypic"
                                 layout="fill"
                                 objectFit="cover"

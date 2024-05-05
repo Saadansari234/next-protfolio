@@ -3,7 +3,7 @@ import Aboutme from "@/components/Aboutme";
 import Projects from "@/components/Projects";
 import Stacks from "@/components/Stacks";
 import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
+import ProjectDetails from "@/common/ProjectDetails";
 
 export default function Home() {
   return (
@@ -11,7 +11,8 @@ export default function Home() {
      <Header/>
     <Aboutme/>
     <Stacks/>
-    <Projects/>
+    {/* <Projects/> */}
+    <ProjectDetails/>
     <Contact/>
     
     </main>
