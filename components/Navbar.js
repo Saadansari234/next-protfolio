@@ -3,12 +3,13 @@ import React from 'react';
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { useRef , useEffect } from 'react';
+import { navLinks } from '@/Database/Links';
 // changes for deployment
 const navigation = [
-    { name: 'Home', href: 'next-protfolio/', current: false },
-    { name: 'About', href: '/next-protfolio/about', current: false },
-    { name: 'Portfolio', href: '/next-protfolio/portfolio', current: false },
-    { name: 'Contact', href: '/next-protfolio/contact', current: false },
+    { name: 'Home', href: navLinks.home, current: false },
+    { name: 'About', href: navLinks.about, current: false },
+    { name: 'Portfolio', href: navLinks.portfolio, current: false },
+    { name: 'Contact', href: navLinks.contact, current: false },
 ]
 
 function classNames(...classes) {

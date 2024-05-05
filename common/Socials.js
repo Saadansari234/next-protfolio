@@ -1,23 +1,23 @@
 "use client"
 import React from 'react'
-
+import { socialLinks } from '@/Database/Links'
 const Socials = () => {
 
     const list= [
         {
-            link:"https://www.linkedin.com/in/saadansari234/",
+            link:socialLinks.linkedin,
             iconName:"fa-brands fa-linkedin-in",
         },
         {
-            link:"https://github.com/Saadansari234",
+            link:socialLinks.github,
             iconName:"fa-brands fa-github",
         },
         {
-            link:"mailto:saadansari3212@gmail.com",
+            link:socialLinks.gmail,
             iconName:"fa-brands fa-google",
         },
         {
-            link:"/saad-resume.pdf",
+            link:socialLinks.resume,
             iconName:"fa-regular fa-file",
             isDownload: true,
         }

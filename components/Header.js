@@ -1,7 +1,7 @@
 "use client"
-
+import { socialLinks , navLinks} from "@/Database/Links";
 const downloadCv = {
-  link: "/saad-resume.pdf",
+  link: socialLinks.resume,
   isDownload: true,
 }
 export default function Header() {
@@ -50,7 +50,7 @@ export default function Header() {
               >
                 Download CV
               </a>
-              <a href="/about" className="text-sm font-semibold leading-6 text-gray-900">
+              <a href={navLinks.about} className="text-sm font-semibold leading-6 text-gray-900">
                 Learn more <span aria-hidden="true">→</span>
               </a>
             </div>
