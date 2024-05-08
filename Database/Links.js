@@ -25,6 +25,7 @@ export const projectLink={
     numbergame_img:"./projects/number-game.png",
     Adminpanel:"./projects/Admin-panel.png",
     filteringapp:"./projects/filtering-app.png"
+    newsapp:"./projects/newsapp.png"
 }
 
 export const TechStacks = [

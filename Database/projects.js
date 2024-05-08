@@ -3,6 +3,15 @@ import { projectLink } from "./Links"
 const myProjects = [
     {
 
+        ImageLink: projectLink.newsapp,
+        Name: "NEWS App",
+        Stack: "React Native, Expo ,EAS Cli, CSS, Git, Github",
+        SourceCode: "https://github.com/Saadansari234/News-App-React-Native.git",
+        LivePrev: "https://www.dropbox.com/scl/fi/xtigtvc3m3xa5taxa18zu/output.apks?rlkey=ft8lv2sjm32f6z9w29up0mkur&st=o2f7f73e&dl=0",
+        note:"Only for andrid"
+    },
+    {
+
         ImageLink: projectLink.filteringapp,
         Name: "Filtering App",
         Stack: "React js, Redux, MUI, CSS, Git, Github",
