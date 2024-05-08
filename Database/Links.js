@@ -24,7 +24,7 @@ export const projectLink={
     quiz_img:"./projects/quiz-game.png",
     numbergame_img:"./projects/number-game.png",
     Adminpanel:"./projects/Admin-panel.png",
-    filteringapp:"./projects/filtering-app.png"
+    filteringapp:"./projects/filtering-app.png",
     newsapp:"./projects/newsapp.png"
 }
 
