@@ -17,7 +17,15 @@ const myProjects = [
         Stack: "React js, Redux, MUI, CSS, Git, Github",
         SourceCode: "https://github.com/Saadansari234/E-commerce-2.git",
         LivePrev: "https://product-filtering-app.netlify.app/",
-        note:"No responsive (only for leptop device)"
+        note:"Responsive"
+    },
+    {
+        ImageLink: projectLink.expwallet,
+        Name: "EXP wallet",
+        Stack: "React js, Redux, Tailwind css ,CSS, Git, Github",
+        SourceCode: "https://github.com/Saadansari234/exp-wallet-react.git",
+        LivePrev: "https://myexp-tracker.netlify.app/",
+        note:"Responsive"
     },
     {
 
